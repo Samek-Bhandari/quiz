@@ -1,100 +1,101 @@
-What is 2+2?-3-4-5-6
-What color is the sky on a clear day?-Blue-Green-Red-Yellow
-How many days are in a week?-5-6-7-8
-Which animal barks?-Cat-Dog-Cow-Sheep
-What is the capital of France?-Berlin-Madrid-Paris-Rome
-Which planet do we live on?-Mars-Earth-Jupiter-Venus
-What is 5×2?-7-10-12-15
-Which season is the coldest?-Summer-Spring-Winter-Autumn
-What do bees make?-Milk-Honey-Bread-Water
-How many legs does a spider have?-6-8-10-12
-What is the largest ocean?-Indian-Arctic-Atlantic-Pacific
-What gas do humans breathe in?-Oxygen-CarbonDioxide-Helium-Nitrogen
-What is H2O commonly called?-Salt-Water-Sugar-Oil
-How many hours are in a day?-12-18-24-30
-Which fruit is yellow?-Apple-Banana-Grape-Cherry
-What is 9-3?-3-6-9-12
-Which animal says “meow”?-Dog-Cat-Bird-Cow
-What shape has three sides?-Square-Triangle-Circle-Rectangle
-How many months are in a year?-10-11-12-13
-What do plants need to grow?-Plastic-Sunlight-Metal-Glass
-What is the opposite of hot?-Warm-Cold-Big-Fast
-Which country is known for pizza?-France-Germany-Italy-Spain
-How many fingers do humans have?-8-9-10-12
-What is 7+1?-6-7-8-9
-Which animal is the largest?-Elephant-Lion-Tiger-Dog
-What color are most school buses?-Red-Blue-Yellow-Green
-Which device is used to call someone?-Book-Phone-Plate-Shoe
-What is the boiling point of water in °C?-50-75-100-150
-Which bird cannot fly?-Eagle-Sparrow-Penguin-Parrot
-What do cows drink?-Juice-Milk-Water-Soda
-What is 3×3?-6-9-12-15
-Which planet is closest to the Sun?-Earth-Mars-Mercury-Jupiter
-What do you use to write on a board?-Chalk-Fork-Spoon-Cup
-How many wheels does a bicycle have?-1-2-3-4
-Which animal has a long neck?-Dog-Cat-Giraffe-Horse
-What is the square root of 16?-2-3-4-5
-Which metal is liquid at room temperature?-Iron-Gold-Mercury-Silver
-How many continents are there?-5-6-7-8
-Which instrument has keys and pedals?-Guitar-Piano-Drum-Flute
-What color is grass?-Blue-Green-Red-Black
-What is 10÷2?-2-3-4-5
-Which animal lives in water?-Lion-Fish-Tiger-Horse
-What is the opposite of up?-Left-Right-Down-Fast
-Which country has the Great Wall?-India-China-Japan-Korea
-How many seconds are in a minute?-30-45-60-90
-Which shape is round?-Square-Circle-Triangle-Rectangle
-What do we drink when thirsty?-Sand-Water-Rock-Wood
-How many sides does a square have?-3-4-5-6
-What is 6+4?-8-9-10-11
-Which animal lays eggs?-Dog-Cat-Chicken-Cow
-Which organ pumps blood?-Lung-Brain-Heart-Stomach
-What color is snow?-Black-Blue-White-Green
-How many letters are in the English alphabet?-24-25-26-27
-What is 8×1?-6-7-8-9
-Which month comes after June?-May-July-August-April
-Which animal is known as king of the jungle?-Tiger-Lion-Elephant-Bear
-What is the fastest land animal?-Cheetah-Dog-Horse-Cat
-How many eyes does a human have?-1-2-3-4
-What is 12÷3?-2-3-4-6
-Which fruit is red?-Banana-Apple-Grape-Lemon
-Which direction does the sun rise?-North-South-East-West
-What is 15-5?-5-8-10-12
-Which tool is used to cut paper?-Knife-Scissors-Fork-Spoon
-How many players in a soccer team?-9-10-11-12
-What do we use to brush teeth?-Soap-Shampoo-Toothbrush-Towel
-Which animal hops?-Elephant-Kangaroo-Dog-Cow
-What is the opposite of big?-Large-Small-Tall-Wide
-How many hours in half a day?-6-8-10-12
-What is 4×5?-10-15-20-25
-Which planet is known as the Red Planet?-Venus-Mars-Jupiter-Saturn
-Which animal has stripes?-Elephant-Zebra-Giraffe-Horse
-What is the first day of the week?-Monday-Friday-Sunday-Wednesday
-What is 100-50?-25-40-50-60
-Which fruit grows on trees?-Potato-Carrot-Apple-Onion
-How many days are in February (non-leap year)?-27-28-29-30
-What do we use to see?-Nose-Ears-Eyes-Hands
-What is 2×6?-8-10-12-14
-Which country is known for pyramids?-Brazil-Egypt-Italy-Canada
-How many legs does a cat have?-2-3-4-5
-What is the color of a stop sign?-Green-Yellow-Red-Blue
-What is 1+9?-8-9-10-11
-Which animal gives us milk?-Dog-Cow-Cat-Horse
-How many days are in a leap year?-364-365-366-367
-Which color is made by mixing red and white?-Pink-Purple-Orange-Brown
-What is 14÷2?-5-6-7-8
-Which planet is the largest?-Earth-Mars-Jupiter-Venus
-How many sides does a triangle have?-2-3-4-5
-What do we use to hear?-Eyes-Ears-Nose-Hands
-Which fruit is orange in color?-Apple-Banana-Orange-Grape
-What is 11+3?-12-13-14-15
-Which animal can fly?-Dog-Cat-Eagle-Horse
-How many minutes are in one hour?-30-45-60-90
-What is the opposite of fast?-Quick-Slow-Rapid-Speed
-Which country is famous for sushi?-China-India-Japan-Italy
-What is 20-4?-14-15-16-18
-Which shape has four equal sides?-Triangle-Circle-Square-Oval
-How many teeth does a normal adult have?-28-30-32-34
-What do we use to measure temperature?-Ruler-Scale-Thermometer-Clock
-Which animal lives in the desert?-Camel-Dolphin-Whale-Frog
-What is 5×5?-20-25-30-35
+What is 2+2?-3-4-5-6-2
+What is the capital of France?-Berlin-London-Paris-Rome-3
+Which planet is known as the Red Planet?-Earth-Venus-Mars-Jupiter-3
+What is 5×3?-8-15-10-20-2
+Which animal barks?-Cat-Dog-Cow-Lion-2
+What color do you get by mixing red and white?-Pink-Purple-Orange-Brown-1
+How many days are in a leap year?-364-365-366-367-3
+What is 10-4?-5-6-7-8-2
+Which gas do humans breathe in?-Oxygen-CarbonDioxide-Nitrogen-Helium-1
+How many wheels does a bicycle have?-1-2-3-4-2
+Which is the largest ocean?-Atlantic-Indian-Arctic-Pacific-4
+What is the square of 6?-30-36-42-48-2
+Which animal can fly?-Dog-Cat-Eagle-Horse-3
+How many minutes in an hour?-30-45-60-90-3
+What is the freezing point of water in Celsius?-0-32-100-50-1
+Which fruit is yellow?-Apple-Banana-Orange-Grape-2
+Which country is known for the Eiffel Tower?-Italy-France-Germany-Spain-2
+What is 9×9?-81-72-90-99-1
+Which organ pumps blood?-Brain-Liver-Heart-Lungs-3
+What do bees produce?-Milk-Honey-Wax-Eggs-2
+Which is the fastest land animal?-Lion-Tiger-Cheetah-Elephant-3
+What is 7+6?-12-13-14-15-2
+Which continent is Egypt in?-Asia-Africa-Europe-SouthAmerica-2
+How many legs does a spider have?-6-8-10-12-2
+Which planet is closest to the sun?-Mercury-Venus-Earth-Mars-1
+What is 15÷3?-3-4-5-6-3
+Which is a mammal?-Crocodile-Shark-Dolphin-Eagle-3
+Which day comes after Friday?-Thursday-Saturday-Sunday-Monday-2
+What is 8-3?-4-5-6-7-2
+Which instrument has keys, pedals, and strings?-Piano-Guitar-Flute-Drum-1
+How many continents are there?-5-6-7-8-3
+Which planet has rings?-Earth-Mars-Saturn-Jupiter-3
+What is 12+7?-18-19-20-21-2
+Which is a primary color?-Green-Red-Purple-Orange-2
+How many sides does a square have?-3-4-5-6-2
+What is H2O?-Oxygen-Hydrogen-Helium-Water-4
+Which animal is known as the King of the Jungle?-Tiger-Lion-Elephant-Cheetah-2
+What is 20-5?-10-15-25-30-2
+Which bird is a symbol of peace?-Crow-Dove-Eagle-Owl-2
+Which fruit is red?-Banana-Apple-Orange-Grapes-2
+What is 3×4?-7-11-12-15-3
+Which is the smallest prime number?-0-1-2-3-3
+Which sense do we use to smell?-Sight-Hearing-Touch-Smell-4
+Which animal has a trunk?-Elephant-Tiger-Cow-Horse-1
+Which planet is called the Morning Star?-Venus-Mercury-Mars-Jupiter-1
+How many hours in a day?-12-24-36-48-2
+What is 100÷10?-5-10-15-20-2
+Which is a carnivore?-Cow-Lion-Horse-Sheep-2
+Which fruit grows on trees?-Carrot-Apple-Potato-Peas-2
+Which metal is liquid at room temperature?-Iron-Mercury-Gold-Aluminum-2
+Which is the largest planet?-Earth-Mars-Jupiter-Venus-3
+Which gas do plants release?-Oxygen-CarbonDioxide-Nitrogen-Helium-1
+Which tool is used for cutting paper?-Pen-Scissors-Hammer-Saw-2
+What is 14+5?-18-19-20-21-2
+Which is a herbivore?-Lion-Tiger-Deer-Wolf-3
+Which color is made by mixing blue and yellow?-Green-Orange-Purple-Brown-1
+What is 11-7?-3-4-5-6-2
+Which instrument is played by blowing?-Guitar-Flute-Piano-Drum-2
+Which animal lives in water?-Tiger-Cow-Fish-Elephant-3
+How many months in a year?-10-11-12-13-3
+Which is the fastest bird?-Pigeon-Sparrow-Falcon-Eagle-3
+Which country is famous for sushi?-China-India-Japan-Italy-3
+Which is the longest river?-Amazon-Nile-Mississippi-Yangtze-2
+What is 6×7?-36-42-48-49-2
+Which planet is known for its rings?-Mars-Saturn-Venus-Earth-2
+Which is the largest desert?-Sahara-Gobi-Kalahari-Arctic-1
+Which number comes after 29?-28-29-30-31-3
+Which organ helps in breathing?-Heart-Liver-Lungs-Kidney-3
+Which gas do humans exhale?-Oxygen-CarbonDioxide-Nitrogen-Helium-2
+Which shape has three sides?-Circle-Square-Triangle-Rectangle-3
+Which day comes before Sunday?-Saturday-Monday-Friday-Thursday-1
+Which is a flowering plant?-Mushroom-Rose-Algae-Fern-2
+Which is the tallest mammal?-Elephant-Giraffe-Lion-Horse-2
+Which is used to tell time?-Ruler-Clock-Scale-Pen-2
+Which fruit is green?-Apple-Banana-Orange-Grapes-1
+Which number is even?-7-11-14-17-3
+Which animal lays eggs?-Cow-Dog-Chicken-Horse-3
+Which is a natural satellite?-Moon-Sun-Mars-Venus-1
+Which is a famous Italian landmark?-EiffelTower-Colosseum-StatueOfLiberty-BigBen-2
+What is 18÷3?-4-5-6-7-3
+Which is a renewable energy source?-Coal-Oil-Solar-NaturalGas-3
+Which is the main gas in air?-Oxygen-CarbonDioxide-Nitrogen-Helium-3
+Which number comes before 50?-48-49-51-52-2
+Which planet is farthest from the sun?-Earth-Mars-Uranus-Neptune-4
+Which animal is known for building dams?-Beaver-Cat-Dog-Horse-1
+Which is a citrus fruit?-Apple-Orange-Banana-Grapes-2
+What is 7×8?-54-55-56-57-3
+Which organ stores bile?-Liver-Stomach-Heart-Lungs-1
+Which is used to write?-Pen-Brush-Chisel-Needle-1
+Which color is the sky on a clear day?-Blue-Green-Red-Yellow-1
+What is 9+6?-13-14-15-16-3
+Which is a planet in our solar system?-Moon-Mercury-Sun-Earth-2
+Which animal has stripes?-Elephant-Tiger-Lion-Cow-2
+What is 15-7?-6-7-8-9-3
+Which is used to cook food?-Oven-Fridge-Table-Chair-1
+Which fruit has seeds outside?-Apple-Strawberry-Banana-Grape-2
+Which shape has four equal sides?-Triangle-Circle-Square-Rectangle-3
+Which planet is blue in color?-Earth-Mars-Neptune-Jupiter-3
+What is 8+7?-14-15-16-17-3
+Which is a herb?-Rose-Tulip-Carrot-Lion-3
+

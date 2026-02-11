@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
+#include "leaderboards.c"
+#include "getanswer.c"
 
 #define MAX_QUESTIONS 10
 #define MAX_PARTICIPANTS 100
@@ -30,7 +32,7 @@ void removenewline (char *line)
 
 //function to display questions
 
-int readquestion(char *filename, struct Question q[], int max )
+int loadQuestions(char *filename, struct Question q[], int max )
 {
     FILE *fp =fopen(filename,"r");
     if (!fp)
@@ -39,8 +41,8 @@ int readquestion(char *filename, struct Question q[], int max )
             return 0;
          }
          char line[100];
-         int count;
-         int valid;
+         int count = 0;
+         int valid =0 ;
 
          while (fgets(line, sizeof(line),fp) && count < max)
          {
@@ -51,7 +53,14 @@ int readquestion(char *filename, struct Question q[], int max )
 
             strncpy(q[count].ques, token, sizeof(q[count].ques) - 1);
              q[count].ques[sizeof(q[count].ques) - 1] = '\0';
-             int token=1;
+
+              for (int i = 0; i < 4; i++) {
+            token = strtok(NULL, "-");
+            if (!token) break;
+            strncpy(q[count].options[i], token, sizeof(q[count].options[i]) - 1);
+            q[count].options[i][sizeof(q[count].options[i]) - 1] = '\0';
+        }
+           
 
              token = strtok(NULL, "-");
                 if (!token) {valid = 0;}
@@ -148,7 +157,7 @@ int main() {
     printf("\nYour score: %d / 5\n", score);
 
     player.score = score;
-    updateLeaderboard(participant, &participantCount, player);
+    updateLeaderboard(participant, &participantCount, &player);
     saveLeaderboard(participant, participantCount);
     displayLeaderboard(participant, participantCount);
 
