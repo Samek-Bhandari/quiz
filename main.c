@@ -1,85 +1,78 @@
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #include <string.h>
-#include "leaderboards.c"
-#include "getanswer.c"
+#include <time.h>
+#include "leaderboards.h"
+#include "getanswer.h"
 
 #define MAX_QUESTIONS 10
 #define MAX_PARTICIPANTS 100
 
-//Structure to print the questions and options
-struct Question{
+// Structure to store questions
+struct Question {
     char ques[100];
-    char options [4][100];
+    char options[4][100];
     int correct;
 };
 
-//structures for participants
-struct participants{
-    char name[100];
-    int score;
-    int attempts;
-};
-
-
-
-//To remove new line 
-
-void removenewline (char *line)
-{
-    line[strcspn(line,"/n")]='/0';
+// Remove newline from strings
+void removenewline(char *line) {
+    line[strcspn(line, "\n")] = '\0';
 }
 
-//function to display questions
+// Load questions from a file
+int loadQuestions(const char *filename, struct Question q[], int max) {
+    FILE *fp = fopen(filename, "r");
+    if (!fp) {
+        printf("Cannot open file: %s\n", filename);
+        return 0;
+    }
 
-int loadQuestions(char *filename, struct Question q[], int max )
-{
-    FILE *fp =fopen(filename,"r");
-    if (!fp)
-        {
-            printf("File %s could not be opened !!", filename);
-            return 0;
-         }
-         char line[100];
-         int count = 0;
-         int valid =0 ;
+    char line[256];
+    int count = 0;
 
-         while (fgets(line, sizeof(line),fp) && count < max)
-         {
-            removenewline (line);
-            
-            char *token = strtok (line,"-");
-            if (!token) {continue;}
+    while (fgets(line, sizeof(line), fp) && count < max) {
+        removenewline(line);
+        int valid = 1;
 
-            strncpy(q[count].ques, token, sizeof(q[count].ques) - 1);
-             q[count].ques[sizeof(q[count].ques) - 1] = '\0';
+        char *token = strtok(line, "-");
+        if (!token) continue;
 
-              for (int i = 0; i < 4; i++) {
+        strncpy(q[count].ques, token, sizeof(q[count].ques)-1);
+        q[count].ques[sizeof(q[count].ques)-1] = '\0';
+
+        for (int i = 0; i < 4; i++) {
             token = strtok(NULL, "-");
-            if (!token) break;
-            strncpy(q[count].options[i], token, sizeof(q[count].options[i]) - 1);
-            q[count].options[i][sizeof(q[count].options[i]) - 1] = '\0';
+            if (!token) { valid = 0; break; }
+            strncpy(q[count].options[i], token, sizeof(q[count].options[i])-1);
+            q[count].options[i][sizeof(q[count].options[i])-1] = '\0';
         }
-           
 
-             token = strtok(NULL, "-");
-                if (!token) {valid = 0;}
+        token = strtok(NULL, "-");
+        if (!token) valid = 0;
 
-                if (valid==1)
-                 {
-                    q[count].correct = atoi(token);
-                    if (q[count].correct >= 1 && q[count].correct <= 4)
-                     {
-                count++;
-                    }
-                }
-            }
+        if (valid) {
+            q[count].correct = atoi(token);
+            if (q[count].correct < 1 || q[count].correct > 4)
+                valid = 0;
+        }
+
+        if (valid) count++;
+    }
 
     fclose(fp);
     return count;
 }
 
-
+// Shuffle questions array
+void shuffleQuestions(struct Question q[], int n) {
+    for (int i = 0; i < n; i++) {
+        int j = rand() % n;
+        struct Question temp = q[i];
+        q[i] = q[j];
+        q[j] = temp;
+    }
+}
 
 int main() {
     srand((unsigned int)time(NULL));
@@ -94,18 +87,23 @@ int main() {
         return 1;
     }
 
+    shuffleQuestions(easy, easyCount);
+    shuffleQuestions(medium, mediumCount);
+    shuffleQuestions(hard, hardCount);
+
     struct participants participant[MAX_PARTICIPANTS];
     int participantCount = loadLeaderboard(participant, MAX_PARTICIPANTS);
 
-     struct participants player;
+    struct participants player;
     printf("Enter your name: ");
-    scanf("%49s", player.name);
+    fgets(player.name, sizeof(player.name), stdin);
+    player.name[strcspn(player.name, "\n")] = '\0';  // remove newline
 
     int found = 0;
     for (int i = 0; i < participantCount; i++) {
         if (strcmp(participant[i].name, player.name) == 0) {
             if (participant[i].attempts >= 5) {
-                printf("You have reached the maximum of 5 trials. Cannot play again.\n");
+                printf("You have reached the maximum of 5 trials.\n");
                 displayLeaderboard(participant, participantCount);
                 return 0;
             }
@@ -114,7 +112,7 @@ int main() {
         }
     }
 
-    int difficulty = 0;  // 0=easy,1=medium,2=hard
+    int difficulty = 0;  // 0=easy, 1=medium, 2=hard
     int score = 0;
 
     for (int round = 0; round < 5; round++) {
@@ -135,7 +133,8 @@ int main() {
             break;
         }
 
-        struct Question q = currentSet[rand() % currentCount];
+        // Pick non-repeating question by round number
+        struct Question q = currentSet[round % currentCount];
 
         printf("\nQuestion %d:\n", round + 1);
         printf("%s\n", q.ques);
@@ -147,25 +146,19 @@ int main() {
         if (answer == q.correct) {
             printf("Correct!\n");
             score++;
-            if (difficulty < 2) difficulty++;
+            if (difficulty < 2) difficulty++;  // increase difficulty
         } else {
             printf("Wrong! Correct answer: %d\n", q.correct);
-            if (difficulty > 0) difficulty--;
+            if (difficulty > 0) difficulty--;  // decrease difficulty
         }
     }
 
     printf("\nYour score: %d / 5\n", score);
 
     player.score = score;
-    updateLeaderboard(participant, &participantCount, &player);
+    updateLeaderboard(participant, &participantCount, player);
     saveLeaderboard(participant, participantCount);
     displayLeaderboard(participant, participantCount);
 
     return 0;
 }
-
-
-
-
-
-

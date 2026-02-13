@@ -6,6 +6,7 @@
 #define MAX_PARTICIPANTS 100
 
 
+
 int loadLeaderboard(struct participants participant[], int max) {
     FILE *fp = fopen("leaderboard.txt", "r");
     if (!fp) return 0;
