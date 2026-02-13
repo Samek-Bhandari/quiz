@@ -1,6 +1,6 @@
-# SAT-Style Quiz in C
+# Quiz Program in C
 
-This is a **console-based SAT-style quiz** written in **C**. The quiz adapts its difficulty based on your answers and keeps track of high scores with a leaderboard.
+This is a **console-based quiz** written in **C**. The quiz adapts its difficulty based on your answers and keeps track of high scores with a leaderboard.
 
 ---
 
@@ -30,13 +30,12 @@ This is a **console-based SAT-style quiz** written in **C**. The quiz adapts its
 
 ---
 
-## How to Compile
+## How to Compile and Run
 
-If you are using GCC:
+If you are using **GCC**:
 
 ```bash
 gcc *.c -o quiz.exe
 
-## How to run 
+.\quiz.exe
 
-\quiz.exe
