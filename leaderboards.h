@@ -1,3 +1,4 @@
+#ifndef LEADERBOARDS_H
 #define LEADERBOARDS_H
 
 #define MAX_PARTICIPANTS 100

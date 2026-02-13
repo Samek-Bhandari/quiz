@@ -1,3 +1,4 @@
+#include <stdio.h>
 int getUserAnswer() {
     int answer;
     while (1) {
