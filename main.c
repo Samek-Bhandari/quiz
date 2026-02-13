@@ -28,7 +28,7 @@ int loadQuestions(const char *filename, struct Question q[], int max) {
         return 0;
     }
 
-    char line[256];
+    char line[512];
     int count = 0;
 
     while (fgets(line, sizeof(line), fp) && count < max) {
@@ -115,7 +115,7 @@ int main() {
     int difficulty = 0;  // 0=easy, 1=medium, 2=hard
     int score = 0;
 
-    for (int round = 0; round < 5; round++) {
+    for (int round = 0; round < 10; round++) {
         struct Question *currentSet = NULL;
         int currentCount = 0;
 
@@ -153,7 +153,7 @@ int main() {
         }
     }
 
-    printf("\nYour score: %d / 5\n", score);
+    printf("\nYour score: %d / 10\n", score);
 
     player.score = score;
     updateLeaderboard(participant, &participantCount, player);
